@@ -109,7 +109,7 @@ body {
 .innercont, .innercont1 {
   position: absolute;
   width:100%;
-  font-style:0;
+  font-size:0;
 }
 
 .project, .project1 {
@@ -125,6 +125,7 @@ body {
 }
 .cover, .cover1 {
   position: absolute;
+  top: 0;
   z-index:100;
   width: 80%;
   height:100%;
