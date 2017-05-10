@@ -126,10 +126,10 @@ body {
 .cover, .cover1 {
   position: absolute;
   top: 0;
+  left: 20%;
   z-index:100;
   width: 80%;
   height:100%;
-  left: 20%;
   background-color: black;
   transition: transform 0.1s;
   box-sizing: border-box;
@@ -177,10 +177,11 @@ a {
   height: 13px;
 }
 
-.button { 
-  position: fixed;
+.button, .button2 { 
+  position: absolute;
   z-index: 100;
   top: 90%;
+  left: 0;
   width: 11.4rem;
   height: 4.2rem;
   border-radius: 1px;
@@ -195,24 +196,7 @@ a {
   text-decoration: none;
   margin-left:4.2rem;
 }
-.button2 { 
-  position: fixed;
-  z-index: 100;
-  top: 90%;
-  width: 11.4rem;
-  height: 4.2rem;
-  border-radius: 1px;
-  background-color: #f8574a;
-  font-family: MuseoSansRounded;
-  font-size: 0.9rem;
-  font-weight: 900;
-  letter-spacing: 0.8px;
-  color: #ffffff;
-  padding: 1.6rem 1.4rem;
-  box-sizing: border-box;
-  text-decoration: none;
-  margin-left:4.2rem;
-}
+ 
 .button:hover, .button2:hover {
   background-color: #ec2c1c;
 }
