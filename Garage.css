@@ -1,0 +1,364 @@
+
+@media screen and (max-width: 800px) { 
+   .button, .button2 {
+    margin-left: 2.5rem;
+   }
+}
+
+@media screen and (min-width: 1440px) {
+  .button, .button2 {
+    margin-left: 7rem;
+   }
+}
+
+@font-face {
+    font-family: MuseoSansRounded; 
+    src: url(Fonts/337D35_0_0.ttf);
+   }
+
+.preloader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #949494;
+  z-index: 500;
+  opacity: 1;
+  visibility: visible;
+}
+.loader {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width: 7rem;
+  height: 7rem;
+  border: 2rem solid white;
+  border-radius: 50%;
+  border-top-color: #ec2c1c;
+  transform: translate(-50%, -50%);
+  animation: 2s spin infinite linear;
+}
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+}
+
+body {
+  margin:0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#outer {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  font-size: 0;
+}
+
+#inner {
+  position: relative;
+  width: 140%;
+  height: inherit;
+  top: 0;
+  left: -20%;
+  font-size: 0;
+  padding:0;
+  transition: transform 0.2s;
+}
+
+#one, #two, #three {
+  position: absolute;
+  height: inherit; 
+}
+
+#one {
+  width: 14%;
+  background-color: black;
+  overflow: hidden;
+}
+#two {
+  left: 14%;
+  width:72%;
+  height:100%;
+  background-color: grey;
+}
+#three {
+  right:0;
+  width: 14%;
+  background-color: black;
+}
+
+.innercont, .innercont1 {
+  position: absolute;
+  width:100%;
+  font-style:0;
+}
+
+.project, .project1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 180px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cover, .cover1 {
+  position: absolute;
+  z-index:100;
+  width: 80%;
+  height:100%;
+  left: 20%;
+  background-color: black;
+  transition: transform 0.1s;
+  box-sizing: border-box;
+  padding: 20% 10%;
+}
+.cover1 {
+  right: 0%;
+}
+.cover div, .cover1 div  {
+  font-family: MuseoSansRounded;
+  font-size: 12px;
+  color: #ffffff;
+  margin-top:10px;
+  box-sizing: content-box;
+}
+.cover div i, .cover1 div i {
+  font-size: 10px;
+}
+.cover div:last-child, .cover1 div:last-child {
+  font-size: 1.3rem;
+  font-weight: 900;
+  line-height: 1.33;
+  letter-spacing: 0.6px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.eye-oval, .eye-oval1  {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border: solid 2px #ffffff;
+  border-radius: 50%;
+}
+.eye-oval:hover, .eye-oval1:hover  {
+  width: 46px;
+  height: 46px;
+}
+.project a img, .project1 a img {
+  width: 17px;
+  height: 13px;
+}
+
+.button { 
+  position: fixed;
+  z-index: 100;
+  top: 90%;
+  width: 11.4rem;
+  height: 4.2rem;
+  border-radius: 1px;
+  background-color: #f8574a;
+  font-family: MuseoSansRounded;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  padding: 1.6rem 1.4rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin-left:4.2rem;
+}
+.button2 { 
+  position: fixed;
+  z-index: 100;
+  top: 90%;
+  width: 11.4rem;
+  height: 4.2rem;
+  border-radius: 1px;
+  background-color: #f8574a;
+  font-family: MuseoSansRounded;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  padding: 1.6rem 1.4rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  margin-left:4.2rem;
+}
+.button:hover, .button2:hover {
+  background-color: #ec2c1c;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.background_video {
+  object-fit: contain;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width:auto;
+  height:auto;
+}
+.flex-content {
+  position:absolute;
+  z-index: 10;
+  top:0;
+  left:0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content:  space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+.flex-row:first-child {
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.lines {
+  position: fixed;
+  z-index:200;
+  left: 47%;
+  top:0;
+  height:6px;
+  width:15px;
+  border-top: solid 2px #ffffff;
+  border-bottom: solid 2px #ffffff;
+  margin-top:2rem;
+}
+.logo_Garage_white {
+  position: fixed;
+  z-index:200;
+  left: 48%;
+  top:-0.7rem;
+  width: 5rem;
+  object-fit: contain;
+  margin-top:2rem;
+  margin-left: 1rem;
+}
+.text {
+  align-self: center;
+  font-family: MuseoSansRounded; 
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: #ffffff;
+  flex-basis: 40%;
+}
+.right {
+  text-align: right;
+}
+.oval {
+  flex-basis: 15%; 
+}
+.oval-grey {
+  width:10rem;
+  height:10rem;
+  margin:auto;
+  border: dashed 1px rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+.oval-white {
+  width: 4rem;
+  height: 4rem;
+  margin: 3rem auto;
+  border: solid 2px rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+.arrows {
+  display: flex;
+  height: 100%;
+  width:100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  width: 0.8rem;
+  height: 1.1rem;
+  cursor: pointer;
+}
+.arrow-left {
+  margin-right: 0.3rem;
+}
+.arrow-right {
+  margin-left: 0.3rem;
+}
+.arrow:hover {
+  opacity: 0.4;
+}
+.flex-row:last-child {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.company {
+  align-self: center;
+  font-family: MuseoSansRounded; 
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.bottom-line {
+  height: 2rem;
+  background-color: #ffffff;
+  border: solid 1px  #ffffff;
+}
+
+.company-hidden {
+  position: fixed;
+  z-index: 100;
+  top:100%;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: #f8574a;
+}
+
+.active {
+  opacity: 1!important;
+}
+.transform-right,.drag-right {
+  transform: translateX(14%);
+}
+.transform-left,.drag-left {
+  transform: translateX(-14%);
+}
